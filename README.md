@@ -26,7 +26,7 @@ src
      └── java
          └── org.example.aopdemo
              ├── AopdemoApplication.java    # Spring Boot 啟動類
-             ├── aspect                     # AOP 切面所在的包
+             ├── aspect                     # AOP 切面所在的package
              │   └── LoggingAspect.java     # 處理方法執行前後的日誌記錄
              └── controller
                  └── DemoController.java    # 測試用的 REST 控制器└── DemoController.java    # 測試用的 REST 控制器
@@ -36,6 +36,6 @@ src
 -----
 1. LoggingAspect 切面
 這個切面用來攔截應用中的所有方法，並在方法執行之前和之後記錄日誌。它還負責計算每個方法的執行時間，幫助開發者優化程式的效能。
-2. DemoController 控制器
+2. DemoController 控制器2. DemoController 控制器
 DemoController 提供一個簡單的 REST API，包含測試方法，用來展示 AOP 的功能。當訪問該 API 時，會觸發切面來記錄方法執行的日誌和時間。
 
